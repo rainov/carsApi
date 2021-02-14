@@ -1,0 +1,2 @@
+#excluding node_modules from git commits
+/node_modules
