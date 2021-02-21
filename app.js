@@ -7,6 +7,8 @@ const logger = require('morgan');
 const indexRouter = require('./routes/index');
 //const booksRouter = require('./routes/book');
 const carsRouter = require('./routes/car');
+const ownerRouter = require('./routes/owner')
+const carownerRouter = require('./routes/carowner') ;
 
 const cors = require('cors');
 const helmet = require('helmet');
@@ -30,6 +32,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 //app.use('/book', booksRouter);
 app.use('/car', carsRouter);
+app.use('/carowner', carownerRouter) ;
+app.use('/owner', ownerRouter) ;
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
