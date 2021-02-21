@@ -21,7 +21,7 @@ router.get('/:id?',
       }
     });
   }
-});
+} );
 
 
 router.post('/', 
@@ -33,7 +33,7 @@ function(request, response) {
       response.json(request.body);
     }
   });
-});
+} );
 
 
 router.delete('/:id', 
@@ -45,7 +45,7 @@ function(request, response) {
       response.json(dbResult);
     }
   });
-});
+} );
 
 
 router.put('/:id', 
@@ -57,6 +57,6 @@ function(request, response) {
       response.json(dbResult);
     }
   });
-});
+} );
 
 module.exports = router;

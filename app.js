@@ -5,7 +5,6 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
-//const booksRouter = require('./routes/book');
 const carsRouter = require('./routes/car');
 const ownerRouter = require('./routes/owner')
 const carownerRouter = require('./routes/carowner') ;
@@ -29,9 +28,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-//app.use('/book', booksRouter);
-app.use('/car', carsRouter);
+app.use('/', indexRouter) ;
+app.use('/car', carsRouter) ;
 app.use('/carowner', carownerRouter) ;
 app.use('/owner', ownerRouter) ;
 

@@ -28,5 +28,5 @@ const carowner = {
       callback
     );
   }
-};
+} ;
 module.exports = carowner;

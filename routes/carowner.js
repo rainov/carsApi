@@ -42,8 +42,8 @@ function(request, response) {
     } else {
       response.json(request.body);
     }
-  });
-});
+  } );
+} );
 
 
 router.delete('/:id', 

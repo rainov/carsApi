@@ -25,4 +25,4 @@ const owner = {
     );
   }
 };
-module.exports = owner;
+module.exports = owner ;
